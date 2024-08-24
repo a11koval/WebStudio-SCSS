@@ -1,0 +1,79 @@
+.info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.info-list {
+    padding: 94px 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    .info-item {
+        margin: 0 30px;
+    }
+
+    .list-item:nth-child(1)::before {
+        content: url("img/antenna\ 1.svg");
+        display: flex;
+        width: 270px;
+        height: 120px;
+        justify-content: center;
+        background-color: var(--team-background-color);
+        align-items: center;
+    }
+    
+    .list-item:nth-child(2)::before {
+        content: url("img/clock\ 1.svg");
+        display: flex;
+        width: 270px;
+        height: 120px;
+        justify-content: center;
+        background-color: var(--team-background-color);
+        align-items: center;
+    }
+    
+    .list-item:nth-child(3)::before {
+        content: url("img/diagram\ 1.svg");
+        display: flex;
+        width: 270px;
+        height: 120px;
+        justify-content: center;
+        background-color: var(--team-background-color);
+        align-items: center;
+    }
+    
+    .list-item:nth-child(4)::before {
+        content: url("img/astronaut\ 1.svg");
+        display: flex;
+        width: 270px;
+        height: 120px;
+        justify-content: center;
+        background-color: var(--team-background-color);
+        align-items: center;
+    }
+}
+
+
+
+
+
+.list-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: var(--title-color);
+
+    .list-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 171.429%;
+        letter-spacing: 0.42px;
+        color: var(--nav-color);
+    
+    }
+}
+
+
+
