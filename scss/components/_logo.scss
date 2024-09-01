@@ -2,7 +2,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: var(--title-color);
+    color: $title-color;
     text-decoration: none;
     width: 145px;
     font-size: 26px;
@@ -10,6 +10,6 @@
     letter-spacing: 3%;
 
     .blue {
-        color: var(--logo-color);
+        color: $logo-color;
     }
 }

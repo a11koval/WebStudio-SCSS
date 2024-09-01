@@ -8,14 +8,19 @@
     justify-content: center;
     max-width: 1200px;
 
-    .sub-hero-item {
-        margin-right: 8px;
-    }
 }
 
+.sub-hero-item {
+    margin-right: 8px;
+}
 
+.sub-hero-btn:hover {
+    background-color: $logo-color;
 
-.sub-hero-btn
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: $font-color;
+}
 
 .sub-hero-btn {
     display: inline-block;
@@ -24,8 +29,8 @@
     padding: 6px 22px;
     min-width: 73px;
     cursor: pointer;
-    background-color: var(--team-background-color);
-    color: var(--title-color);
+    background-color: $team-background-color;
+    color: $title-color;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -34,13 +39,6 @@
     letter-spacing: 0.03em;
     transition: background-color 250ms, color 250ms;
 
-    &:hover {
-        background-color: var(--logo-color);
-    
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        color: var(--font-color);
-    }
 }
 
 .sub-hero-title {
@@ -48,7 +46,7 @@
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .sub-hero-list-img {
@@ -62,17 +60,15 @@
 
 }
 
-
+.sub-hero-list-img-item:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 12px -5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 8px 12px -5px rgba(0, 0, 0, 0);
+}
 
 .sub-hero-list-img-item {
-    outline: var(--sub-hero-backgroundcolor) 0.5px solid;
+    outline: $sub-hero-backgroundcolor 0.5px solid;
 
     flex-basis: calc((100% - 60px) / 3);
-
-    &:hover {
-        -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 12px -5px rgba(0, 0, 0, 0);
-        box-shadow: 0px 10px 13px -7px #000000, 0px 8px 12px -5px rgba(0, 0, 0, 0);
-    }
 }
 
 .border {
@@ -80,7 +76,7 @@
 }
 
 .sub-hero-position {
-    color: var(--nav-color);
+    color: $nav-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 187.5%;
@@ -121,6 +117,6 @@ img {
     line-height: 28px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--font-color);
+    color: $font-color;
     padding: 25px;
 }

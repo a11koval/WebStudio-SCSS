@@ -1,7 +1,7 @@
 .hero {
-    background-color: var(--main-background-color);
+    background-color: $main-background-color;
     padding: 200px 0;
-    background-image: url(img/Img.png);
+    background-image: url(../img/Img.png);
     background-size: cover;
     opacity: 0.9;
     background-image: radial-gradient();
@@ -14,7 +14,7 @@
     letter-spacing: 2.64px;
     line-height: 136%;
     text-transform: uppercase;
-    color: var(--font-color);
+    color: $font-color;
 }
 
 .hero-btn {
@@ -24,9 +24,9 @@
     line-height: 187%;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background-color: var(--logo-color);
+    background-color: $logo-color;
     margin: 0 auto;
     display: block;
-    color: var(--team-background-color);
+    color: $team-background-color;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 }
