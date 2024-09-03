@@ -4,18 +4,37 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-
+    
 }
 .container {
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+
+    /* Стилі для малих екранів */
+    @media screen and (min-width: 480px){
+        width: 480px;
+        @media screen and (min-width: 480px){
+            
+         }
+        
+       }
+    /* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
+       @media screen and (min-width: 768px) {
+           width: 768px;
+       }
+    /* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
+       @media screen and (min-width: 1200px) {
+           width: 1200px;
+       }
 }
 .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 
 
@@ -31,4 +50,5 @@ body {
 @import "./components/info";
 @import "./components/team";
 @import "./components/clients";
-@import "./components/sub-hero"
+@import "./components/sub-hero";
+@import "./untills/placeholder";

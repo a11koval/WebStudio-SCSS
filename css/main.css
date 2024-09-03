@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 body {
   font-family: "Roboto", sans-serif;
@@ -9,6 +10,24 @@ body {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  /* Стилі для малих екранів */
+  /* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
+  /* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .flex-container {
@@ -18,8 +37,9 @@ body {
 }
 
 .header {
-  padding: 25px 0;
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .container {
@@ -27,11 +47,43 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .flex-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .flex-container .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-container {
+    width: 1200px;
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -258,6 +310,7 @@ body {
   background-size: cover;
   opacity: 0.9;
   background-image: radial-gradient();
+  width: 100%;
 }
 
 .hero-title {
@@ -543,43 +596,19 @@ textarea {
 }
 
 .list-item:nth-child(1)::before {
-  content: url("..img/antenna.svg");
-  display: flex;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  background-color: #F5F4FA;
-  align-items: center;
+  content: url(../img/antenna.svg);
 }
 
 .list-item:nth-child(2)::before {
-  content: url("img/clock 1.svg");
-  display: flex;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  background-color: #F5F4FA;
-  align-items: center;
+  content: url(../img/clock-info.svg);
 }
 
 .list-item:nth-child(3)::before {
-  content: url("img/diagram 1.svg");
-  display: flex;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  background-color: #F5F4FA;
-  align-items: center;
+  content: url(../img/diagram-info.svg);
 }
 
 .list-item:nth-child(4)::before {
-  content: url("img/astronaut 1.svg");
-  display: flex;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  background-color: #F5F4FA;
-  align-items: center;
+  content: url(../img/astronaut-info.svg);
 }
 
 .list-title {
@@ -937,4 +966,13 @@ img {
   text-align: left;
   color: #FFFFFF;
   padding: 25px;
+}
+
+.list-item:nth-child(1)::before, .list-item:nth-child(2)::before, .list-item:nth-child(3)::before, .list-item:nth-child(4)::before {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  background-color: #F5F4FA;
+  align-items: center;
 }
