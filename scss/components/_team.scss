@@ -1,12 +1,10 @@
 .our-team-worker-description h3 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @extend %our-team-title;
 
     .our-team-worker-description p {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.18;
+        @extend %our-team-title;
     }
 }
 
@@ -16,14 +14,12 @@
     padding-bottom: 94px;
 
     .what-we-work-img {
-        display: flex;
-        justify-content: space-between;
+       @extend %our-team-flex;
     }
 }
 
 .our-team-list {
-    display: flex;
-    justify-content: space-between;
+    @extend %our-team-flex;
 
     figure.our-team-item {
         margin: 0;

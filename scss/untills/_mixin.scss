@@ -1,0 +1,22 @@
+@mixin button($button-color, $button-bg, $border-btn, $btn-font-weight){
+color: $button-color;
+background-color: $button-bg;
+display: inline-block;
+text-align: center;
+font-size: 16px;
+line-height: 187%;
+border-radius: 4px;
+letter-spacing: 0.3em;
+font-weight: $btn-font-weight;
+
+}
+
+    
+    
+
+    
+    
+    
+    
+    
+

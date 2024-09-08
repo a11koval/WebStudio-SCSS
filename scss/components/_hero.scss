@@ -19,15 +19,10 @@
 }
 
 .hero-btn {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 187%;
+    @include button($button-color: $team-background-color, $button-bg:$logo-color, $btn-font-weight:700);
+    @extend %btn;
     letter-spacing: 0.96px;
-    border-radius: 4px;
-    background-color: $logo-color;
     margin: 0 auto;
     display: block;
-    color: $team-background-color;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 }

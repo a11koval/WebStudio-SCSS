@@ -628,26 +628,13 @@ textarea {
 
 .our-team-worker-description h3 {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
 }
 .our-team-worker-description h3 .our-team-worker-description p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
 }
 
 .what-we-work {
   padding-bottom: 94px;
-}
-.what-we-work .what-we-work-img {
-  display: flex;
-  justify-content: space-between;
-}
-
-.our-team-list {
-  display: flex;
-  justify-content: space-between;
 }
 .our-team-list figure.our-team-item {
   margin: 0;
@@ -975,4 +962,14 @@ img {
   justify-content: center;
   background-color: #F5F4FA;
   align-items: center;
+}
+
+.our-team-worker-description h3, .our-team-worker-description h3 .our-team-worker-description p {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.what-we-work .what-we-work-img, .our-team-list {
+  display: flex;
+  justify-content: space-between;
 }

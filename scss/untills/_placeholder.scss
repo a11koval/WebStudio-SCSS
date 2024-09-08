@@ -1,8 +1,27 @@
-%info-list-item{
+%info-list-item {
     display: flex;
     width: 270px;
     height: 120px;
     justify-content: center;
     background-color: $team-background-color;
     align-items: center;
+}
+
+%our-team-title {
+
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+%our-team-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+%btn-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 187%;
+    border-radius: 4px;
+    
 }
