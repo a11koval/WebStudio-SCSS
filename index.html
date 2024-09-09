@@ -11,7 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -20,20 +20,26 @@
       <div class="flex-container">
         <a class="logo" href="index.html"><span class="blue">Web</span>Studio</a>
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">
-                Студія
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="navigation-list list-header">
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html">
+                  Студія
 
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="portfolio.html">Портфоліо</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Контакти</a>
-            </li>
-          </ul>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Контакти</a>
+              </li>
+            </ul>
+
         </nav>
         <ul class="contacts">
           <li class="contacts-item">
@@ -70,17 +76,14 @@
   <!-- main -->
   <main>
 
-    <section class="hero"
-    id="hero">
+    <section class="hero" id="hero">
       <div class="container">
-        <h1 class="hero-title"
-        data-aos="fade-left">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="hero-title" data-aos="fade-left">Ефективні рішення для вашого бізнесу</h1>
         <div class="hero-modal">
-          <button data-modal-open class="hero-btn"
-          data-aos="flip-right">Замовити послугу</button>
+          <button data-modal-open class="hero-btn" data-aos="flip-right">Замовити послугу</button>
         </div>
 
-       
+
       </div>
     </section>
     <section class="info">
@@ -119,7 +122,7 @@
     </section>
     <section class="what-we-work">
       <div class="container">
-        <h2 class="work-title"  data-aos="flip-up">Чим ми займаємось</h2>
+        <h2 class="work-title" data-aos="flip-up">Чим ми займаємось</h2>
         <article class="what-we-work-img">
           <div class="what-we-work-img-div" data-aos="flip-right">
             <img class="work-img" src="img/box1.jpg" alt="фото1">
@@ -140,9 +143,7 @@
       <div class="container">
         <h2 class="our-team-title">Наша Команда</h2>
         <article class="our-team-list">
-          <figure class="our-team-item" data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+          <figure class="our-team-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="img/img1.jpg" alt="фото4" width="200">
             <figcaption class="our-team-worker-description">
               <h3>Ігор дем'яненко</h3>
@@ -209,9 +210,7 @@
           </figure>
 
 
-          <figure class="our-team-item" data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+          <figure class="our-team-item" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="img/img2.jpg" alt="фото5" width="200">
             <figcaption class="our-team-worker-description">
               <h3>Ольга Рєпіна</h3>
@@ -276,9 +275,7 @@
               </ul>
             </div>
           </figure>
-          <figure class="our-team-item" data-aos="fade-down"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+          <figure class="our-team-item" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="img/img3.jpg" alt="фото6" width="200">
             <figcaption class="our-team-worker-description">
               <h3>Микола Тарасов</h3>
@@ -343,9 +340,7 @@
               </ul>
             </div>
           </figure>
-          <figure class="our-team-item" data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+          <figure class="our-team-item" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="img/img4.jpg" alt="фото7" width="200">
             <figcaption class="our-team-worker-description">
               <h3>Михайло Ермаков</h3>
@@ -748,62 +743,74 @@
     <div class="modal">
       <div class="modal-container">
         <button class="close" data-modal-close>&times;</button>
-          <svg width="18" height="18">
-            <use href="./img/person-black-18dp 1 .svg"></use>
-          </svg>
+        <svg width="18" height="18">
+          <use href="./img/person-black-18dp 1 .svg"></use>
+        </svg>
         </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form-modal">
           <label for="name">Ім'я</label>
           <div class="div-modal-icon-input">
-          <input type="text" id="name" name="name" required class="input-modal">
+            <input type="text" id="name" name="name" required class="input-modal">
           </div>
           <div class="div-modal-icon-svg">
-            <svg class="svg-modal-icon"><use xlink:href="#icon-person-black-18dp-1-1">
-              <symbol id="icon-person-black-18dp-1-1" viewBox="0 0 32 32">
-                <path d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z"></path>
+            <svg class="svg-modal-icon">
+              <use xlink:href="#icon-person-black-18dp-1-1">
+                <symbol id="icon-person-black-18dp-1-1" viewBox="0 0 32 32">
+                  <path
+                    d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z">
+                  </path>
                 </symbol>
-            </use></svg>
+              </use>
+            </svg>
           </div>
           <label for="phone">Телефон</label>
           <div class="div-modal-icon-input">
-          <input type="tel" id="phone" name="phone" required class="input-modal">
+            <input type="tel" id="phone" name="phone" required class="input-modal">
           </div>
           <div class="div-modal-icon-svg-2">
-            <svg class="svg-modal-icon"><use xlink:href="#icon-phone-black-18dp-1-1">
-              <symbol id="icon-phone-black-18dp-1-1" viewBox="0 0 32 32">
-                <path d="M24.882 19.773l-3.268-0.373c-0.785-0.090-1.557 0.18-2.11 0.733l-2.367 2.367c-3.641-1.853-6.626-4.825-8.478-8.478l2.38-2.38c0.553-0.553 0.823-1.325 0.733-2.11l-0.373-3.242c-0.154-1.299-1.248-2.277-2.56-2.277h-2.226c-1.454 0-2.663 1.209-2.573 2.663 0.682 10.987 9.469 19.761 20.443 20.443 1.454 0.090 2.663-1.119 2.663-2.573v-2.226c0.013-1.3-0.965-2.393-2.264-2.547z"></path>
+            <svg class="svg-modal-icon">
+              <use xlink:href="#icon-phone-black-18dp-1-1">
+                <symbol id="icon-phone-black-18dp-1-1" viewBox="0 0 32 32">
+                  <path
+                    d="M24.882 19.773l-3.268-0.373c-0.785-0.090-1.557 0.18-2.11 0.733l-2.367 2.367c-3.641-1.853-6.626-4.825-8.478-8.478l2.38-2.38c0.553-0.553 0.823-1.325 0.733-2.11l-0.373-3.242c-0.154-1.299-1.248-2.277-2.56-2.277h-2.226c-1.454 0-2.663 1.209-2.573 2.663 0.682 10.987 9.469 19.761 20.443 20.443 1.454 0.090 2.663-1.119 2.663-2.573v-2.226c0.013-1.3-0.965-2.393-2.264-2.547z">
+                  </path>
                 </symbol>
-            </use></svg>
+              </use>
+            </svg>
           </div>
           <label for="email">Пошта</label>
           <div class="div-modal-icon-input">
-          <input type="email" id="email" name="email" required class="input-modal">
+            <input type="email" id="email" name="email" required class="input-modal">
           </div>
           <div class="div-modal-icon-svg-3">
-            <svg class="svg-modal-icon"><use xlink:href="#icon-email-black-18dp-1-1">
-              <use href="./img/email-black-18dp 1 (1).svg">
-                <symbol id="icon-email-black-18dp-1-1" viewBox="0 0 32 32">
-                  <path d="M26.667 5.333h-21.333c-1.467 0-2.653 1.2-2.653 2.667l-0.013 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM26.133 11l-9.427 5.893c-0.427 0.267-0.987 0.267-1.413 0l-9.427-5.893c-0.333-0.213-0.533-0.573-0.533-0.96 0-0.893 0.973-1.427 1.733-0.96l8.933 5.587 8.933-5.587c0.76-0.467 1.733 0.067 1.733 0.96 0 0.387-0.2 0.747-0.533 0.96z"></path>
+            <svg class="svg-modal-icon">
+              <use xlink:href="#icon-email-black-18dp-1-1">
+                <use href="./img/email-black-18dp 1 (1).svg">
+                  <symbol id="icon-email-black-18dp-1-1" viewBox="0 0 32 32">
+                    <path
+                      d="M26.667 5.333h-21.333c-1.467 0-2.653 1.2-2.653 2.667l-0.013 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM26.133 11l-9.427 5.893c-0.427 0.267-0.987 0.267-1.413 0l-9.427-5.893c-0.333-0.213-0.533-0.573-0.533-0.96 0-0.893 0.973-1.427 1.733-0.96l8.933 5.587 8.933-5.587c0.76-0.467 1.733 0.067 1.733 0.96 0 0.387-0.2 0.747-0.533 0.96z">
+                    </path>
                   </symbol>
+                </use>
               </use>
-            </use></svg>
-                  
-              </svg>
+            </svg>
+
+            </svg>
           </div>
 
-          <label for="message" >Коментар</label>
-          <textarea id="message" name="message" rows="4" required
-              placeholder="Введіть текст" class="textarea-modal"></textarea>
+          <label for="message">Коментар</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Введіть текст"
+            class="textarea-modal"></textarea>
 
           <div class="checkbox-label">
-              <input type="checkbox" id="agreement" name="agreement" required>
-              <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="#">Умови
-                      договору</a></label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="#">Умови
+                договору</a></label>
           </div>
 
           <button type="submit" class="button-modal-list">Відправити</button>
-      </form>
+        </form>
       </div>
     </div>
   </div>
