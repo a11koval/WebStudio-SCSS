@@ -7,6 +7,12 @@
         @extend %our-team-title;
     }
 }
+@media (max-width: 1199px){
+.what-we-work{
+    display: none;
+}
+}
+    
 
 
 

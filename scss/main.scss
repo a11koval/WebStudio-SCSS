@@ -11,58 +11,16 @@ body {
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+   
 }
 
-/* Стилі для малих екранів */
-@media (min-width: 480px) {
-    .container {
-        width: 480px;
 
 
-
-
-        .hero {
-            background-color: #2f303a;
-            text-align: center;
-            padding: 118px 60px;
-            width: 100vw;
-            max-width: 100%;
-            min-height: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-title {
-            font-weight: 900;
-            font-size: 1.5em;
-            line-height: 1.615;
-            letter-spacing: .06em;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-        }
-
-        .info {
-            padding-bottom: 60px;
-            padding-top: 60px;
-        }
-
-        .info-list {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-    }
+ul {
+    list-style: none;
 }
-
-/* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
-@media (min-width: 768px) {
-    
-}
-
-/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
-@media screen and (min-width: 1200px) {
-    
+a{
+    text-decoration: none;
 }
 
 
@@ -75,19 +33,19 @@ body {
 
 
 
-
-
-
-@import "./components/mobile-menu";
+@import "./untills/variabels";
+@import "./untills/placeholder";
+@import "./untills/mixin";
 @import "./header";
 @import "./footer";
 @import "./components/hero";
 @import "./components/logo";
 @import "./components/modal";
+@import "./components/mobile-menu";
 @import "./components/info";
 @import "./components/team";
 @import "./components/clients";
 @import "./components/sub-hero";
-@import "./untills/placeholder";
-@import "./untills/mixin";
-@import "./untills/variabels";
+@import "./components/adaptive";
+
+

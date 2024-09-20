@@ -24,7 +24,7 @@
 
 .sub-hero-btn {
     @include button($button-color: $title-color, $button-bg:$team-background-color, $btn-font-weight:500);
-    @extend %btn;
+    @extend %btn-text;
     display: inline-block;
     border: none;
     padding: 6px 22px;
