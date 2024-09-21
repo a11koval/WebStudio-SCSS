@@ -17,7 +17,9 @@
 
 
 .what-we-work {
-    padding-bottom: 94px;
+        display: flex;
+        padding-bottom: 94px;
+
 
     .what-we-work-img {
        @extend %our-team-flex;
@@ -186,7 +188,11 @@ figure.our-team-item {
 
 
 }
-
+.our-team-list, .what-we-work .what-we-work-img {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
 
 
 

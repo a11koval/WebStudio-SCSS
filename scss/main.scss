@@ -1,5 +1,7 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;

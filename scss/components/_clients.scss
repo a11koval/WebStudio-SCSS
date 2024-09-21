@@ -27,10 +27,11 @@
     gap: 30px;
     list-style: none;
 
-    .clients-list-item {
 
-        display: flex;
-    }
+    
+}
+.clients-list-item {
+    flex-basis: calc((100% - 150px) / 6);
 }
 
 

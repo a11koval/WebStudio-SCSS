@@ -1,4 +1,8 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -211,6 +215,10 @@ a {
   justify-content: flex-start;
 }
 
+.footer-left {
+  margin-right: 5px;
+}
+
 .footer-logo {
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
@@ -279,7 +287,7 @@ a {
 }
 
 .footer-right {
-  margin-left: 93px;
+  margin-left: 43px;
 }
 
 .footer-right-title {
@@ -820,6 +828,7 @@ textarea {
   }
 }
 .what-we-work {
+  display: flex;
   padding-bottom: 94px;
 }
 .our-team-list figure.our-team-item {
@@ -959,6 +968,12 @@ figure.our-team-item {
   fill: white;
 }
 
+.our-team-list, .what-we-work .what-we-work-img {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
 .social-link:hover {
   background-color: #2196F3;
   border-radius: 30px;
@@ -998,8 +1013,9 @@ figure.our-team-item {
   gap: 30px;
   list-style: none;
 }
-.clients-list .clients-list-item {
-  display: flex;
+
+.clients-list-item {
+  flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-link {
@@ -1162,6 +1178,54 @@ img {
   .mobile-menu-svg-header {
     display: none;
   }
+  .hero {
+    width: 960px;
+    background-color: #2f303a;
+    text-align: center;
+    padding: 80px 0;
+    max-width: 100%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .container-clients {
+    width: 960px;
+    /* max-width: 1200px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  .clients-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .clients-list .clients-list-item {
+    display: flex;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .footer {
+    /* background-color: #2F303A; */
+    /* padding: 60px 0; */
+    text-align: center;
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .flex-footer {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+  }
+  .footer-left {
+    margin-right: 165px;
+    margin-left: 76px;
+  }
 }
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
@@ -1180,8 +1244,16 @@ img {
   }
   .hero {
     width: 768px;
-    padding: 118px 204px;
+    background-color: #2f303a;
+    text-align: center;
+    padding: 80px 0;
     max-width: 100%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .info-list {
     gap: 30px;
@@ -1287,6 +1359,15 @@ img {
   .mobile-menu-svg-header {
     display: none;
   }
+  .footer-left {
+    margin-right: 135px;
+    margin-left: 76px;
+  }
+  .footer-right {
+    margin-left: 3px;
+    /* max-width: 450px; */
+    width: 100%;
+  }
 }
 /* Extra small: 0px (320px) - 767px */
 @media (max-width: 767px) {
@@ -1296,8 +1377,7 @@ img {
   .hero {
     background-color: #2f303a;
     text-align: center;
-    padding: 118px 60px;
-    width: 480px;
+    padding: 80px 0;
     max-width: 100%;
     min-height: 400px;
     margin-left: auto;
@@ -1461,5 +1541,49 @@ img {
     background-color: #2F303A;
     border-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
+  }
+  .footer-article-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .hero {
+    background-color: #2f303a;
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .list-item {
+    /* padding-bottom: 30px; */
+    width: 100%;
+    /* height: 122px; */
+  }
+  .list-item:nth-child(4)::before, .list-item:nth-child(3)::before, .list-item:nth-child(2)::before, .list-item:nth-child(1)::before {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    align-items: center;
+  }
+  .container-clients {
+    width: 100%;
+  }
+  .footer-article-right {
+    display: flex;
+    flex-direction: column;
   }
 }

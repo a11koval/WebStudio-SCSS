@@ -7,7 +7,9 @@
     display: flex;
     justify-content: flex-start;
 }
-
+.footer-left{
+    margin-right: 5px;
+}
 .footer-logo {
     color: $font-color;
     font-family: 'Raleway', sans-serif;
@@ -86,7 +88,7 @@
 }
 
 .footer-right {
-    margin-left: 93px;
+    margin-left: 43px;
 }
 
 .footer-right-title {
