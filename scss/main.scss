@@ -20,6 +20,8 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -49,5 +51,6 @@ a{
 @import "./components/clients";
 @import "./components/sub-hero";
 @import "./components/adaptive";
+@import "./components/portfolio-list"
 
 

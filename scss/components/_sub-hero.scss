@@ -1,12 +1,14 @@
 .sub-hero {
-    padding: 45px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .sub-hero-list {
     list-style: none;
     display: flex;
+   
     justify-content: center;
-    max-width: 1200px;
+    margin-bottom: 50px;
 
 }
 
@@ -45,13 +47,10 @@
 }
 
 .sub-hero-list-img {
-    list-style: none;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
-    max-width: 1200px;
     gap: 30px;
-    padding: 0;
 
 }
 

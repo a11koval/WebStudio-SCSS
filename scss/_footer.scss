@@ -1,25 +1,28 @@
 .footer {
     background-color:  $main-background-color;
     padding: 60px 0;
+    text-align: left;
 }
+
 
 .flex-footer {
     display: flex;
     justify-content: flex-start;
 }
 .footer-left{
-    margin-right: 5px;
+    margin-right: 70px;
+    margin-bottom: 0;;
 }
 .footer-logo {
     color: $font-color;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    text-decoration: none;
-    width: 145px;
-    font-size: 26px;
-    line-height: 30.52px;
-    letter-spacing: 3%;
+    font-size: 24px;
+    line-height: 1.1667;
+    letter-spacing: .03em;
+}
+.blue{
+    color: $logo-color;
 }
 
 .address {
@@ -48,12 +51,16 @@
 
 
 .footer-social {
-    margin-left: 70px;
+    margin-bottom: 60px;
 
     .footer-social-title {
         color: #FFFFFF;
-        font-size: 14px;
-        margin-left: 20px;
+        font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: 20px;
     }
 }
 
@@ -69,16 +76,46 @@
     justify-content: center;
 }
 
-.social-link {
-    fill: #FFFFFF;
-    width: 24px;
-    height: 24px;
+.social-link-footer {
+   fill: $font-color;
     padding: 12px;
     margin-left: 15px;
-    background-color: rgb(53, 60, 69);
+    background-color: rgba(255, 255, 255, .1);
     border-radius: 30px;
     transition: background-color 250ms;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $font-color;
+    border-radius: 50%;
+    -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
+.social-link-footer {
+    fill: $font-color;
+     padding: 12px;
+     margin-left: 15px;
+     background-color: rgba(255, 255, 255, .1);
+     border-radius: 30px;
+     transition: background-color 250ms;
+     display: flex;
+     width: 100%;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     color: $font-color;
+     border-radius: 50%;
+     -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+     transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+ }
+ .social-link-footer:hover{
+    background-color: $logo-color;
+ }
+
 
 
 
