@@ -18,7 +18,25 @@
   <header class="header">
     <div class="container">
       <div class="header__container">
-       
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
         <nav class="header__site-nav">
           <a class="logo header__item" href="index.html"><span class="blue">Web</span>Studio</a>
           <ul class="header__nav-list">
@@ -32,11 +50,6 @@
               <a class="header__link" href="#">Контакти</a>
             </li>
           </ul>
-          <button type="button" class="header__menu js-open-menu" aria-expanded="false">
-            <svg class="mobile-menu-svg-header" width="40" height="40">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
         </nav>
         <ul class="header__contacts-list">
           <li class="header__item">
@@ -122,21 +135,27 @@
     <!-- what we work -->
     <section class="what-we-work">
       <div class="container">
-        <h2 class="work-title" data-aos="flip-up">Чим ми займаємось</h2>
-        <article class="what-we-work-img">
-          <div class="what-we-work-img-div" data-aos="flip-right">
-            <img class="work-img" src="img/box1.jpg" alt="фото1">
-            <p class="work-text">Дестопні Додатки</p>
-          </div>
-          <div class="what-we-work-img-div" data-aos="flip-left">
-            <img class="work-img" src="img/box2.png" alt="фото2">
-            <p class="work-text">Мобільні Додатки</p>
-          </div>
-          <div class="what-we-work-img-div" data-aos="flip-down">
-            <img class="work-img" src="img/box3.png" alt="фото3">
-            <p class="work-text">Дизайнерські рішення</p>
-          </div>
-        </article>
+        <h2 class="what-we-work-title">Чим ми займаємося</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <div class="label__thumb">
+              <img class="work-img" src="img/box1.jpg" alt="Десктопні додатки">
+              <h3 class="label__title">Десктопні додатки</h3>
+            </div>
+          </li>
+          <li class="service__item">
+            <div class="label__thumb">
+              <img class="work-img" src="img/box2.png" alt="Мобільні додатки">
+              <h3 class="label__title">Мобільні додатки</h3>
+            </div>
+          </li>
+          <li class="service__item">
+            <div class="label__thumb">
+             <img class="work-img" src="img/box3.png" alt="Дизайнерські рішення">
+              <h3 class="label__title">Дизайнерські рішення</h3>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- our team -->
@@ -740,75 +759,29 @@
       </div>
     </div>
   </footer>
-  <div class="menu js-menu-container">
-    <button class="menu__close js-close-menu button-close" type="button">
-      <svg width="40" height="40">
-        <use href="./images/icons.svg#icon-close"></use>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
       </svg>
     </button>
-    <div class="container-menu">
-      <div class="menu__navigation">
-        <ul>
-          <li>
-            <a
-              class="menu__navigation-link menu__navigation-link--current"
-              href=""
-              >Студія</a
-            >
-          </li>
-          <li>
-            <a class="menu__navigation-link" href="./portfolio.html"
-              >Портфоліо</a
-            >
-          </li>
-          <li><a class="menu__navigation-link" href="#">Контакти</a></li>
-        </ul>
-      </div>
-      <div class="menu__contacts">
-        <ul>
-          <li>
-            <a class="menu__tel-link" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li>
-            <a class="menu__mail-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="menu__social">
-          <li>
-            <a class="menu__social-link" 
-            aria-label="instagram icon"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer noopener">Instagram</a>
-          </li>
-          <li>
-            <a class="menu__social-link" 
-            aria-label="twitter icon"
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noreferrer noopener">Twitter</a>
-          </li>
-          <li>
-            <a class="menu__social-link" aria-label="facebook icon"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer noopener">Facebook</a>
-          </li>
-          <li>
-            <a class="menu__social-link menu__social-link--right"       aria-label="linkedin icon"
-            href="https://www.linkedin.com/in/"
-            target="_blank"
-            rel="noreferrer noopener"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
+
+    <ul class="mobile-menu">
+      <li><a href="" class="link">About</a></li>
+      <li><a href="" class="link">Products</a></li>
+      <li><a href="" class="link">Contacts</a></li>
+      <li><a href="" class="link">Career</a></li>
+    </ul>
   </div>
   
   <div class="backdrop is-hidden" data-modal="">
@@ -856,7 +829,7 @@
             <input type="email" id="email" name="email" required class="input-modal">
           </div>
           <div class="div-modal-icon-svg-3">
-            <svg class="svg-modal-icon">
+            <svg class="svg-modal-icon-email">
               <use xlink:href="#icon-email-black-18dp-1-1">
                 <use href="./img/email-black-18dp 1 (1).svg">
                   <symbol id="icon-email-black-18dp-1-1" viewBox="0 0 32 32">
@@ -890,7 +863,13 @@
   <script>
     AOS.init();
   </script>
-  <script src="./js/mobile-menu.js"></script>
+  <script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

@@ -1,6 +1,7 @@
 .project{
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 &__overlay-thumb {
         position: relative;
         overflow: hidden;
@@ -70,3 +71,4 @@
         margin-top: 4px;
     }
 }
+

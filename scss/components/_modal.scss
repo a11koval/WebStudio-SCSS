@@ -186,7 +186,7 @@ textarea {
 .button-modal-list {
     width: 200px;
     height: 50px;
-    margin-left: 156px;
+    margin-left: 96px;
 }
 
 .checkbox-label a {
@@ -224,4 +224,14 @@ textarea {
 
 .div-modal-icon-svg-3:hover .svg-modal-icon {
     fill: #2196F3;
+}
+.svg-modal-icon-email{
+    width: 18px;
+    height: 18px;
+    fill: #212121;
+    position: absolute;
+    top: 46px;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: fill 250ms $timing-function;
 }

@@ -8,7 +8,7 @@
     }
 }
 @media (max-width: 1199px){
-.what-we-work{
+    .what-we-work{
     display: none;
 }
 }
@@ -17,7 +17,7 @@
 
 
 .what-we-work {
-        display: flex;
+        
         padding-bottom: 94px;
 
 
@@ -63,7 +63,7 @@
 
 
 
-.work-title {
+.what-we-work-title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -73,10 +73,38 @@
     margin-bottom: 50px;
 }
 
-.work-list {
-    list-style: none;
-    padding: 36px 0;
+.service__list{
     display: flex;
+    gap: 30px;
+}
+.service__item{
+    flex-basis: calc((100% - 60px) / 3);
+}
+.label__thumb {
+    position: relative;
+}
+.work-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.label__title {
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(33, 33, 33, 0.6);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 20px;
+    margin: 0;
 }
 
 .what-we-work-img {
@@ -185,6 +213,7 @@ figure.our-team-item {
 
 .social-team-link:hover .our-team-svg {
     fill: white;
+    background-color: #2196F3;
 
 
 }
