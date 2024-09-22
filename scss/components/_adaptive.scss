@@ -116,9 +116,7 @@
         top: 48px;
     }
 
-    .menu-toggle {
-        display: none;
-    }
+   
 
     .hero {
         width: 768px;
@@ -288,6 +286,9 @@
         left: 15px;
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .menu-container .js-menu-container{
+        display: none;
     }
 }
 
